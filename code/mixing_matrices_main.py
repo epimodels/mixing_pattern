@@ -22,12 +22,16 @@ def main():
     # and daywise_count_profile has the antibiotic exposure information of the patients
     # the count_profile holds the cumulative count of each type of antibiotic for the patients on a daily basis
 
-    # reading and processing the data
-    contact_table_filename = '../../data/contable_all_patient_cleaned.csv'
-    antibiotic_profile_filename = '../../data/daywise_count_profile.csv'
+    # reading and processing the patient level data
+    # these two lines are commented out because these data tables are not publicly available
+    """
+    contact_table = '../../data/contable_all_patient_cleaned.csv'
+    antibiotic_profile = '../../data/daywise_count_profile.csv'
+    """
 
     # clean the data, get the hospital and unit list
-    data_contact, unit_list_per_hospital, data_antibiotic = process_data(contact_table_filename, antibiotic_profile_filename)
+    # commenting out this step as well
+    # data_contact, unit_list_per_hospital, data_antibiotic = process_data(contact_table, antibiotic_profile)
 
     # data is cleaned, now compute the mixing matrices by variables of interest
     """
